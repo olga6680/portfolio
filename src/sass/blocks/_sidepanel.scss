@@ -10,6 +10,7 @@
     z-index: 3;
     color: #fff;
     &__link {
+        transform: rotate(-90deg);
         svg {
             fill: rgba(255, 255, 255, 1);
             &:hover {
