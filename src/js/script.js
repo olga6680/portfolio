@@ -9,3 +9,10 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+const counters = document.querySelectorAll('.work__progress-percent'),
+    lines = document.querySelectorAll('.work__progress-block span');
+
+counters.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
