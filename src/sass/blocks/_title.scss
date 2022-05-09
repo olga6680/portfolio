@@ -1,7 +1,7 @@
 .title {
     font-weight: bold;
     font-size: 36px;
-    line-height: 60px;
+    margin-bottom: 20px;
     &_white {
         color: #fff;
     }
@@ -27,7 +27,7 @@
         text-align: center;
         @include before-circle;
         &:before {
-            top: 12px;
+            top: -6px;
             left: 50%;
             transform: translateX(-50%);
         }
