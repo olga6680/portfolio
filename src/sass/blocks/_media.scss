@@ -2,6 +2,12 @@
     .sidepanel {
         display: none;
     }
+    .resume {
+        &__wrapper {
+            column-gap: unset;
+            justify-content: space-between;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -20,6 +26,20 @@
                 grid-template-columns: 40px 195px;
                 column-gap: 15px
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 380px);
+        }
+    }
+    .work {
+        &__wrapper {
+            grid-template: repeat(2, minmax(270px, auto))/repeat(3, 270px);
+            justify-content: center;
+        }
+        &__progress {
+            column-gap: 30px;
         }
     }
 }
@@ -44,6 +64,26 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            padding: 40px 0 0 0;
+            grid-template-columns: repeat(2, 260px);
+        }
+    }
+    .work {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: repeat(2, minmax(270px, auto))/repeat(2, 270px);
+        }
+        &__progress {
+            padding-top: 40px;
+            grid-template-columns: 540px;
+            justify-content: center;
+            row-gap: 40px;
+            grid-auto-columns: unset;
         }
     }
 }
@@ -82,6 +122,21 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 100%;
+        }
+        &__column {
+            padding-top: 40px;
+        }
+    }
+    .work {
+        &__wrapper {
+            padding: 40px 0 0 0;
+            grid-template: repeat(2, minmax(255px, auto))/repeat(2, 255px);
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -118,6 +173,17 @@
             grid-template: 340px auto auto / 1fr;
         }
         &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+    .work {
+        &__wrapper {
+            padding: 40px 25px 0 25px;
+            grid-template: minmax(270px, auto) / 270px;
+            grid-auto-columns: unset;
+            row-gap: 20px;
+        }
+        &__progress {
             grid-template-columns: 1fr;
         }
     }
